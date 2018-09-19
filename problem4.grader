@@ -13,9 +13,17 @@
 #This is an optional exercise, but great for extra practice!
 
 #Code Editor
-
+#solution 1:
 def polysum(n, s):
     import math
     area = (0.25*n*(s**2))/math.tan(math.pi/n)
+    squarePeri = s*s*n*n
+    return round((area+squarePeri), 4)
+    
+    
+solution 2:
+#from math import *
+def polysum(n, s):
+    area = (0.25*n*(s**2))/tan(pi/n)
     squarePeri = s*s*n*n
     return round((area+squarePeri), 4)
